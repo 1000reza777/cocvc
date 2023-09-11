@@ -1,0 +1,217 @@
+:root {
+    --main_color:rgb(48, 51, 51);
+    --complementary_color:#095568d0;
+    --secondary_color:#0e7688;
+    --white_color:#CBE4DE;
+}
+body{
+    min-height: 100vw;
+    margin: 0;
+    background-color: var(--main_color);
+    direction: rtl;
+    background-image: url(../image/Bmlcgx.jpg);
+    background-position:center;
+    background-repeat: no-repeat ;
+    background-size: 100vw;
+    background-attachment:fixed;
+}
+#top_header {
+    width: 100%;
+    height: 100px;
+    background-color: var(--main_color);
+    direction: ltr;
+}
+#COCVC_logo{
+    width: 70px;
+    margin: 15px 10%;
+}
+#header{
+    display: flex;
+    justify-content: space-between;
+}
+#header_botten {
+    padding:12px 24px;
+    margin: 20px 100px 0 0;
+    border: 3px solid var(--white_color);
+    border-radius: 4px;
+    transition: ease-in-out 0.3s;
+    color: var(--white_color);
+    font-weight: bolder;
+    font-size: 16px;
+    background-color: var(--secondary_color);
+}
+#header_color {
+    background-color: var(--complementary_color);
+}
+#header_imaeg {
+    width: 500px;
+}
+#h_text_box {
+    height: 300px;
+    width: 400px;
+    flex-grow: 2;
+    margin-left: 10px;
+}
+.parts {
+    min-height: 400px;
+    text-align: center;
+}
+.container {
+    margin: 0 20%;
+}
+
+.paddings_up {
+    padding-top: 120px;
+ } 
+ .text_p {
+    color: var(--white_color);
+    font-size: 20px;
+}
+ .titles {
+    margin: 0;
+    color:#16b8b0;
+    font-size: 30px;
+ }
+.buttons {
+    padding:10px 20px;
+    border: 3px solid var(--white_color);
+    border-radius: 4px;
+    transition: ease-in-out 0.3s;
+    color: var(--main_color);
+    font-weight: bolder;
+    font-size: 16px;
+    background-color: var(--secondary_color);
+   }
+button:hover {
+    transform: scale(1.2) rotate(10deg);
+    background-color: var(--white_color);
+    color: var(--secondary_color);
+   }
+#prerequisite{
+    height: 650px;
+    background-color: var(--main_color);
+    text-align: center;
+   }
+summary::marker {
+    padding: 15px;
+    content: '🔵';
+}
+details {
+    padding: 12px;
+    border: #1db3c7 solid 5px;
+    color: var(--white_color);
+    margin: 20px 0;
+    flex-grow: 1;
+    border-radius: 12px;
+    transition: all 0.5s;
+    font-size: 20px;
+    background-color: #0e515a;
+    cursor: pointer;
+}
+.margin_bottom {
+    margin-bottom: 90px;
+}
+#other_courses {
+    background-color:  var(--complementary_color);
+}
+#title_other_courses {
+    color: var(--white_color);
+}
+.Specialized_course_card {
+    background-color: var(--main_color);
+    width: 220px;
+    height: 370px ;
+    margin: 40px 10px;
+    padding: 10px;
+    border-radius: 18px;
+    border: 2px solid var(--white_color);
+    text-align: center;
+}
+#card_box {
+    display: flex;
+    justify-content:space-around;
+    flex-wrap: wrap;
+    margin-top: 70px;
+    padding-bottom:70px ;
+    text-align: center;
+}
+.cards_image {
+    width: 140px;
+    margin: 30px 0;
+}
+.card_titles{
+    font-size: 25px;
+    color: var(--secondary_color);
+}
+/* -------------------------------------<foote>------------------------------------------ */
+footer {
+    width: 100%;
+    height: 470px;
+    display: flex;
+    justify-content: center;
+    text-align: center;background-color: var(--main_color);
+}
+#Scoring {
+    margin: 70px 410px 0;
+    width: 300px;
+    height: 70px;
+    padding: 40px 0 0 0;
+    align-items: center;
+}
+@keyframes animate8345 {
+    0%,100% {
+      filter: hue-rotate(0deg);
+    }
+  
+    50% {
+      filter: hue-rotate(360deg);
+    }
+  }
+  
+  .cocvc {
+    margin-bottom: 40px;
+    color: rgb(0, 0, 0);
+    background: linear-gradient(to right, #2d60ec, #3ccfda);
+    font-size: 30px;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    animation: animate8345 9s linear infinite;
+    font-weight: bold;
+  }
+#stars {
+    width: 130px;
+    height: 20px;
+    margin: 50px auto  ;
+}
+.rating:not(:checked) > input {
+    position: absolute;
+    appearance: none;
+  }
+  
+  .rating:not(:checked) > label {
+    float: right;
+    cursor: pointer;
+    font-size: 30px;
+    color: #666;
+  }
+  
+  .rating:not(:checked) > label:before {
+    content: '★';
+  }
+  
+  .rating > input:checked + label:hover,
+  .rating > input:checked + label:hover ~ label,
+  .rating > input:checked ~ label:hover,
+  .rating > input:checked ~ label:hover ~ label,
+  .rating > label:hover ~ input:checked ~ label {
+    color: #e58e09;
+  }
+  
+  .rating:not(:checked) > label:hover,
+  .rating:not(:checked) > label:hover ~ label {
+    color: #ff9e0b;
+  }
+  
+  .rating > input:checked ~ label {
+    color: #ffa723;
+  }

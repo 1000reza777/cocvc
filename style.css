@@ -4,7 +4,14 @@
     --secondary_color:#0E8388;
     --white_color:#CBE4DE;
 }
-
+@font-face {
+    font-family: b-titr;
+    src: url(./Doc/B\ Titr\ Bold_0.ttf) format('ttf');
+}
+*{
+    font-family: b-titr !important;
+    scroll-behavior: smooth;
+}
 body {
     min-height: 100vh;
     margin: 0;
@@ -17,7 +24,6 @@ body {
     padding: 1%;
     background-color: #2c33339d;
     direction: ltr;
-
 }
 .flex {
     display: flex;
@@ -26,6 +32,7 @@ body {
 }
 #menu_icon {
     margin: 0 50px;
+    width: 60px;
 }
 #menu_logo {
     width: 60px;
@@ -79,24 +86,26 @@ header {
     background-size: 2000px;
     direction: rtl;
 }
-#space {
-    height: 230px;
+#header_content_box{
+    margin-top: 15%;
+    width:100%;
+    height: 88%;
 }
 #header_text_box {
-    margin-right:20%;
+    margin: 0 18%;
     text-align: center;
-    width: 30%;
     height: 50px;
     background-color:var(--secondary_color) ;
     overflow: hidden ;
+    flex-grow: 1;
 }
 #header_cocvc_box {
     background-color: var(--secondary_color);
-    width: 13%;
     height: 45px;
     margin-top: 30px;
-    margin-right: 20%;
+    margin:30px 18%;
     text-align: center;
+    flex-grow: 1;
 }
 .curved {
     padding: 3px;
@@ -105,7 +114,8 @@ header {
     outline: .2px solid var(--white_color);
 }
 #header_button {
-    margin: 90px 30% 0 0;
+    width: 180px;
+    margin: 0 18%;
 }
 .buttons {
     padding:10px 20px;
@@ -127,7 +137,7 @@ header {
  }
  /* --------------------------------<main>------------------------------------- */
  .container {
-    margin: 0 20%;
+    margin: 0 18%;
  }
  .paddings_up {
     padding-top: 120px;
@@ -149,17 +159,18 @@ header {
     flex-wrap: wrap;
  }
  .course_cards{
-    width: 300px;
-    min-height: 470px;
+    width: 240px;
+    height: 470px;
     background-color: var(--main_color);
     margin: 10px;
     border-radius: 20px;
     border: 2px solid var(--white_color);
-    margin: 100px 10px 0;
+    margin: 100px 0;
+    padding: 10px 15px;
  }
  .card_images{
     width: 200px;
-    margin: 30px;
+    margin: 30px auto;
  }
  .card_texts {
     font-size: 30px;
@@ -259,8 +270,8 @@ header {
 }
 .Specialized_course_card {
     background-color: var(--main_color);
-    width: 220px;
-    height: 370px ;
+    width: 200px;
+    height: 350px ;
     margin: 40px 10px;
     padding: 10px;
     border-radius: 18px;
@@ -271,11 +282,11 @@ header {
     margin-top: 70px;
 }
 .cards_image {
-    width: 140px;
+    width: 120px;
     margin: 30px 0;
 }
 .card_titles{
-    font-size: 25px;
+    font-size: 21px;
     color: var(--white_color);
 }
 /* -------------------------------------<foote>------------------------------------------ */
